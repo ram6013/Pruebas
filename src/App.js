@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-
+import SideBar from './componentes/SideBar';
+import { motion } from "framer-motion";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="relative h-screen w-full bg-gray-400">
+      <header className='flex justify-center aling-center bg-gray-700'>
+        <h1 className='text-5xl p-4'>Sala de estudio</h1>
       </header>
+      <SideBar></SideBar>
+
     </div>
   );
 }
